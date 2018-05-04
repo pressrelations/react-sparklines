@@ -14,6 +14,6 @@ export default ({ data, limit, width = 1, height = 1, margin = 0, max = arrayMax
 
     return data.map((d, i) => ({
         x: i * hfactor + margin,
-        y: (max === min ? 1 : (max - d)) * vfactor + margin
+        y: (max === min ? 1 : (max - d) * vfactor + margin)
     }));
 };
